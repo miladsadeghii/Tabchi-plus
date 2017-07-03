@@ -1,6 +1,6 @@
 tabchi = dofile('./bot/funcation.lua')
 --------------------------------
-tabchi_id = 399380495
+tabchi_id = 449796120
 ---------------------------------
 json = dofile('./libs/JSON.lua')
 ---------------------------------
@@ -14,7 +14,7 @@ https = require "ssl.https"
 -----~~~~~~~~~~~~~~~~
 d = dofile('./libs/redis.lua')
 -------------------------------
-config_sudo = {161531785}
+config_sudo = {82883425}
 function dl_cb(arg, data)
 end
 function is_sudo(msg)
@@ -205,7 +205,7 @@ local com = d:scard("tcom") or 0
 local block = d:scard("tblock") or 0
 local allmsg = d:get("tallmsg") or 0
 local link = d:scard('links') or 0 
-local text = '📊آمار باتچی شما \n\n📩 `تمام پیام ها :` *'..allmsg..'*\n\n`👨‍👩‍👧‍👦 سوپرگروه ها  :`* '..gps..'*\n\n`👥 گروه ها  :` *'..gp..'*`\n\n🗣 پی وی ها : `*'..user..'*\n\n`📙 مخاطبین  :` *'..com..'*`\n\n🔗 لینک های استفاده شده :` *'..link..'*`\n\n❌ مسدودی ها :` *'..block..'*\n\n✅ `تهیه سرور مناسب` \n🆔 @mehrserver'
+local text = '📊آمار باتچی شما \n\n📩 `تمام پیام ها :` *'..allmsg..'*\n\n`👨‍👩‍👧‍👦 سوپرگروه ها  :`* '..gps..'*\n\n`👥 گروه ها  :` *'..gp..'*`\n\n🗣 پی وی ها : `*'..user..'*\n\n`📙 مخاطبین  :` *'..com..'*`\n\n🔗 لینک های استفاده شده :` *'..link..'*`\n\n❌ مسدودی ها :` *'..block..'*\n\n✅ `تهیه سرور و بات مناسب` \n🆔 @Bz _ 2Nafare _ info'
  tabchi.sendText(msg.chat_id_, msg.id_,1,text,1,'md')
  end
  if text == 'help' and is_sudo(msg) then
