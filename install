@@ -33,4 +33,3 @@ NC='\033[0m'
 CYAN='\033[0;36m'
 echo -e "${CYAN}Pleace Send ./start${NC}"
 exit
-.
