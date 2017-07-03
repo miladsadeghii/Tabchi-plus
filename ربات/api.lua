@@ -1,5 +1,5 @@
 tabchi = dofile('./bot/funcation.lua')
-tabchi_id = 393052542
+tabchi_id = 449796120
 ---------------------------------
 
 json = dofile('./libs/JSON.lua')
@@ -13,7 +13,7 @@ http = require "socket.http"
 https = require "ssl.https"
 -----~~~~~~~~~~~~~~~~
 d = dofile('./libs/redis.lua')
-config_sudo = {161531785}
+config_sudo = {82883425}
 function dl_cb(arg, data)
  --vardump(data)
  --vardump(arg)
@@ -191,7 +191,7 @@ local gps = d:scard("asgp") or 0
 local user = d:scard("ausers")
 local gp = d:scard("agp") or 0
 local allmsg = d:get("aallmsg") or 0
-local text = '📊آمار باتچی شما \n\n📩 `تمام پیام ها :` *'..allmsg..'*\n\n`👨‍👩‍👧‍👦 سوپرگروه ها  :`* '..gps..'*\n\n`👥 گروه ها  :` *'..gp..'*`\n\n🗣 پی وی ها : `*'..user..'*\n\n✅ `بهینه شده توسط مهر سرور` \n🆔 @mehrserver'
+local text = '📊آمار باتچی شما \n\n📩 `تمام پیام ها :` *'..allmsg..'*\n\n`👨‍👩‍👧‍👦 سوپرگروه ها  :`* '..gps..'*\n\n`👥 گروه ها  :` *'..gp..'*`\n\n🗣 پی وی ها : `*'..user..'*\n\n✅ `بهینه شده توسط میلاد` \n🆔 @Bz _ 2Nafare _ info'
  tabchi.sendText(msg.chat_id_, msg.id_,1,text,1,'md')
  end
 if is_sudo(msg) then
