@@ -127,7 +127,7 @@ end
   local savecontact = (d:get('savecontact') or 'no') 
     if savecontact == 'yes' then
  if msg.content_.ID == "MessageContact" then
-	  tabchi.importContacts(msg.content_.contact_.phone_number_, (msg.content_.contact_.first_name_ or '--'), '#MehrServer.Net', msg.content_.contact_.user_id_)
+	  tabchi.importContacts(msg.content_.contact_.phone_number_, (msg.content_.contact_.first_name_ or '--'), '#BZ_2NaFare', msg.content_.contact_.user_id_)
         print("ConTact Added")
 local function c(a,b,c) 
   tabchi.sendContact(msg.chat_id_, msg.id_, 0, 1, nil, b.phone_number_, b.first_name_, (b.last_name_ or ''), 0)
